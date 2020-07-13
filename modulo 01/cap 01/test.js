@@ -2,18 +2,18 @@ let a = 5
 let b = 6
 
 if (a > b) {
-    console.log(a + ' e maior que ' + b)
+    console.log(a + ' é maior que ' + b)
 
 } else { 
     if ( a < b){
-    console.log(a + 'é menor que ' + b)
+    console.log(a + ' é menor que ' + b)
 
 } else {
-    console.log(a + ' e igual a ' + b)
+    console.log(a + ' é igual a ' + b)
     }
 } 
 
-let dia = 1
+let dia = 8
 
 if (dia === 1) {
     console.log('Domingo')
@@ -24,7 +24,35 @@ else {
 }
 else {
     if (dia === 3) {
-            consol.log('terça')
-        }
+            console.log('terça')
+}   
+else {
+    if (dia === 4) {
+        console.log('quarta')
     }
-}
+else {
+    if (dia === 5) {
+        console.log('quinta')
+    }
+else {
+    if (dia === 6) {
+        console.log('sexta')
+    }   
+else {
+    if (dia === 7) {
+        console.log('sabado')
+    }
+else {
+    {
+    console.log('dia não existente "digite entre 1 a 7"')
+    }
+     }
+      }
+       }
+        }
+         }
+          }
+           }
+            
+        
+
