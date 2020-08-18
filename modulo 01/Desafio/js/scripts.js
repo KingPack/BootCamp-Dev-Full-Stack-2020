@@ -39,7 +39,8 @@ function activateInput() {
 
 function render() {
     var divNames = document.querySelector('#names');
-
+    divNames.innerHTML='';
+    
     var ul = document.createElement('ul');
 
     for(var i = 0; i < globalNames.length; i++) {
