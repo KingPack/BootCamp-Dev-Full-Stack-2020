@@ -28,7 +28,7 @@ else {
 }   
 else {
     if (dia === 4) {
-        console.log('quarta')
+        console.log('quartaa')
     }
 else {
     if (dia === 5) {
