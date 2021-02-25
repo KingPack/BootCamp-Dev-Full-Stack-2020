@@ -16,7 +16,7 @@ if (a > b) {
 let dia = 8
 
 if (dia === 1) {
-    console.log('Domingo')
+    console.log('Domingoo')
 }
 else {
     if (dia === 2){
