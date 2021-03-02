@@ -9,7 +9,7 @@ if (a > b) {
     console.log(a + ' é menor que ' + b)
 
 } else {
-    console.log(a + ' é igual  ' + b)
+    console.log(a + ' é igual a ' + b)
     }
 } 
 
