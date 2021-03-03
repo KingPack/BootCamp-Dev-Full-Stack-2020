@@ -47,7 +47,7 @@ function render() {
 
         var button = document.createElement('button')
         button.classList.add('deleteButton')
-        button.textContent = '';
+        button.textContent = 'X';
 
         button.addEventListener('click', deleteName);
 
