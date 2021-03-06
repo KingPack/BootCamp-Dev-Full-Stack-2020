@@ -2,14 +2,14 @@ let a = 5
 let b = 6
 
 if (a > b) {
-    console.log(a + ' é maior que ' + b)
+    console.log(a + ' é maior que :' + b)
 
 } else { 
     if ( a < b){
-    console.log(a + ' é menor que ' + b)
+    console.log(a + ' é menor que : ' + b)
 
 } else {
-    console.log(a + ' é iigual a ' + b)
+    console.log(a + ' é iigual a :' + b)
     }
 } 
 
