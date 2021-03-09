@@ -52,9 +52,13 @@ function render() {
     }
 
     function createSpan(name) {
+        function editItem(){
+            inputName.value = name
+            }
         var span = document.createElement('span');
         span.classList.add('clickable')
         span.textContent = name;
+        span.addEventListener('click', editItem)
         
         return span
     }
