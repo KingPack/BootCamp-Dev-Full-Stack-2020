@@ -3,6 +3,7 @@ window.addEventListener('load', start)
 var globalNames = ['Um', 'Dois', 'Tres', 'Quatro'];
 var inputName = null;
 var isEditing = false;
+var currentIndex = true;
 
 function start() {
     inputName = document.querySelector('#inputName')
@@ -27,10 +28,14 @@ function activateInput() {
         globalNames.push(newName)
         render()
     }
+    function updateName(newName){
+
+    }
 
     function handleTyping(event) {
         if (event.key === 'Enter'){
             if(isEditing) {
+                updateName(event.target.value)
             }
             else {
                 insertName(event.target.value)
@@ -58,11 +63,12 @@ function render() {
         return button; 
     }
 
-    function createSpan(name) {
+    function createSpan(name, index) {
         function editItem(){
             inputName.value = name
             inputName.focus()
             isEditing = true
+            currentIndex = index 
         }
 
 
@@ -85,7 +91,7 @@ function render() {
 
         var li = document.createElement('li')
         var button = createDeleteButton(i);
-        var span = createSpan(currentName);
+        var span = createSpan(currentName, i);
         
 
         li.appendChild(button);
