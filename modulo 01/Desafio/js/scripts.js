@@ -54,7 +54,10 @@ function render() {
     function createSpan(name) {
         function editItem(){
             inputName.value = name
-            }
+            inputName.focus()
+        }
+
+
         var span = document.createElement('span');
         span.classList.add('clickable')
         span.textContent = name;
