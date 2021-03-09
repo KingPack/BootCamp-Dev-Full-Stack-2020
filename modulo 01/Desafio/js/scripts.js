@@ -54,7 +54,7 @@ function render() {
     function createSpan(name) {
         var span = document.createElement('span');
         span.classList.add('clickable')
-        span.textContent = currentName;
+        span.textContent = name;
         
         return span
     }
