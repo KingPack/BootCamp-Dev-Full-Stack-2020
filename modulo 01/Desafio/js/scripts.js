@@ -29,10 +29,16 @@ function activateInput() {
         render()
     }
     function updateName(newName){
-
+        globalNames[currentIndex] = newName;
     }
 
     function handleTyping(event) {
+        var hasText = !!event.target.value && event.target.value.trim() !== '';
+        
+        if (!hasText){
+            return
+        }
+        
         if (event.key === 'Enter'){
             if(isEditing) {
                 updateName(event.target.value)
@@ -42,6 +48,8 @@ function activateInput() {
             }
 
             isEditing = false;
+            clearInput(); 
+            render()
         }
     }
 
