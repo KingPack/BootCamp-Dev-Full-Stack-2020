@@ -66,6 +66,7 @@ function render() {
         var button = createDeleteButton(i);
 
         var span = document.createElement('span');
+        span.classList.add('clickable')
         span.textContent = currentName;
 
         li.appendChild(button);
