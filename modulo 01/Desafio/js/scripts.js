@@ -1,6 +1,6 @@
 window.addEventListener('load', start)
 
-var globalNames = ['Um', 'Dois', 'Tres', 'quatro'];
+var globalNames = ['Um', 'Dois', 'Tres', 'Quatro'];
 var inputName = null;
 
 function start() {
