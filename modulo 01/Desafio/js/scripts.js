@@ -2,6 +2,7 @@ window.addEventListener('load', start)
 
 var globalNames = ['Um', 'Dois', 'Tres', 'Quatro'];
 var inputName = null;
+var isEditing = false;
 
 function start() {
     inputName = document.querySelector('#inputName')
@@ -29,7 +30,13 @@ function activateInput() {
 
     function handleTyping(event) {
         if (event.key === 'Enter'){
-            insertName(event.target.value)
+            if(isEditing) {
+            }
+            else {
+                insertName(event.target.value)
+            }
+
+            isEditing = false;
         }
     }
 
@@ -55,6 +62,7 @@ function render() {
         function editItem(){
             inputName.value = name
             inputName.focus()
+            isEditing = true
         }
 
 
