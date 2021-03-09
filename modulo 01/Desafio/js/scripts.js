@@ -44,13 +44,10 @@ function render() {
             render();
         }
       
-
         var button = document.createElement('button')
         button.classList.add('deleteButton')
         button.textContent = 'X';
-
         button.addEventListener('click', deleteName);
-
         return button;
     }
     var divNames = document.querySelector('#names');
