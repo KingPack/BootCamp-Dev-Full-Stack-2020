@@ -1,6 +1,6 @@
 window.addEventListener('load', start)
 
-var globalNames = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco'];
+var globalNames = ['Um', 'Dois', 'Tres', 'Quatro', 'Cinco', 'Seis'];
 var inputName = null;
 var isEditing = false;
 var currentIndex = true;
