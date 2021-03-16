@@ -14,3 +14,11 @@ li {
     margin-right: 10px;
     border-radius: 50%;
 }
+
+#displayRGB {
+    color:"";
+    font-size: 10px;
+    font-weight: 05px;
+    background-color:"";
+
+}
