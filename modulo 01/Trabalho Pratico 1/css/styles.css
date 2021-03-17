@@ -16,9 +16,7 @@ li {
 }
 
 #displayRGB {
-    color:"";
-    font-size: 10px;
-    font-weight: 05px;
-    background-color:"";
-
+    font-size: 25px;
+    font-weight: 25px;
+    background-color:rgb(150, 250, 100);
 }
