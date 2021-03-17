@@ -21,13 +21,14 @@
             id="inputRed"
             type="range"
             placeholder="Red"
-            min="0" max="255"
-            
+            min="0" max="255" value="150"
+            oninput="valueRed.value=value"  
             />
             <input
             id="valueRed"
             type="text"
-            placeholder=""
+            value="150"
+            disabled
             />
             <br>
         </label>
@@ -35,14 +36,16 @@
             <input
             id="InputGreen"
             type="range"
-            placeholder="Green"
-            min="0" max="255"
+            min="0" max="255" value="250"
+            oninput="displayGreen.value=value"
             />
             <input
-            id="valueGreen"
+            id="displayGreen"
             type="text"
-            placeholder=""
+            value="250"
+            disabled
             />
+            
             <br>
         </label>
         <label>
@@ -50,12 +53,14 @@
             id="InputBlue"
             type="range"
             placeholder="Blue"
-            min="0" max="255"
+            min="0" max="255" value="100"
+            oninput="displayBlue.value=value"
             />
             <input
-            id="valueBlue"
+            id="displayBlue"
             type="text"
-            placeholder=""
+            value="100"
+            disabled
             />
         </div>
             <br>
@@ -67,6 +72,7 @@
         <input
         id="displayRGB"
         type="text"
+        value=""
         />
     </div>
     
