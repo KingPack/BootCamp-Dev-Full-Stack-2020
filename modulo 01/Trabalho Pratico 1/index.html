@@ -12,71 +12,27 @@
 </head>
 
 <body>
-    <div>
-        <h2>Modifique as range</h2>
-        <div class="inputRGB">
-        <form action="Input">
-        <label>
-            <input
-            id="inputRed"
-            type="range"
-            placeholder="Red"
-            min="0" max="255" value="150"
-            oninput="valueRed.value=value"  
-            />
-            <input
-            id="valueRed"
-            type="text"
-            value="150"
-            disabled
-            />
-            <br>
-        </label>
-        <label>
-            <input
-            id="InputGreen"
-            type="range"
-            min="0" max="255" value="250"
-            oninput="displayGreen.value=value"
-            />
-            <input
-            id="displayGreen"
-            type="text"
-            value="250"
-            disabled
-            />
-            
-            <br>
-        </label>
-        <label>
-            <input
-            id="InputBlue"
-            type="range"
-            placeholder="Blue"
-            min="0" max="255" value="100"
-            oninput="displayBlue.value=value"
-            />
-            <input
-            id="displayBlue"
-            type="text"
-            value="100"
-            disabled
-            />
-        </div>
-            <br>
-        </label>
-    </form>
+        <h1>Modifique as range</h1>
+
+    <div class="flex-row">
+        <span class="label">(R) Vermelho</span>
+        <input class="range" value="0" type="range" min="0" max="255" />
+        <input class="text" type="text" value="0" disabled/>
     </div>
-    <div>
-        <h3>Display RGB</h3>
-        <input
-        id="displayRGB"
-        type="text"
-        value=""
-        disabled
-        />
+
+    <div class="flex-row">
+        <span class="label">(G) Verde</span>
+        <input class="range" value="0" type="range" min="0" max="255" />
+        <input class="text" type="text" value="0" disabled/>
     </div>
-    
+
+    <div class="flex-row">
+        <span class="label">(B) Azul</span>
+        <input class="range" value="0" type="range" min="0" max="255" />
+        <input class="text" type="text" value="0" disabled/>
+    </div>
+    <div class="square"></div>
+
 </body>
     <script src="./js/script.js"></script>
 </html>

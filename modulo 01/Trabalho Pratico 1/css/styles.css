@@ -1,22 +1,31 @@
-ul,
-li {
-    list-style-type: none;
+body {
+    font-family: Consolas;
+    padding: 20px;
 }
 
-.clickable {
-    cursor: pointer
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.deleteButton {
-    color: white;
-    font-weight: bold;
-    background-color: red;
-    margin-right: 10px;
-    border-radius: 50%;
+.label {
+    min-width: 120px;
 }
 
-#displayRGB {
-    font-size: 25px;
-    font-weight: 25px;
-    background-color:rgb(150, 250, 100);
+.range {
+    min-width: 200px;
+}
+
+.text {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
 }
