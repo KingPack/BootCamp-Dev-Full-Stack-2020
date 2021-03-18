@@ -1,8 +1,13 @@
 body {
     font-family: Consolas;
     padding: 20px;
+    margin: center;
+    
 }
-
+h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
 .flex-row {
     display: flex;
     flex-direction: row;
