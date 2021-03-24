@@ -49,7 +49,7 @@ console.log(sum3(2,3))
 console.log(sum4(2,3))
 
 
-// template literals
+//z template literals
 
 const nome = 'Lucas'
 const surName = 'Hendrek'
