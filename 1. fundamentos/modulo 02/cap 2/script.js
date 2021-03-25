@@ -7,7 +7,8 @@ function doMap() {
     const nameEmailArray = peoples.results.map(person => {
         return {
             name: person.name,
-            email: person.email
+            email: person.email,
+            postcod: person.postcod
         }
     })
     console.log(nameEmailArray)
@@ -19,3 +20,4 @@ function doFilter() {
     })
     console.log(olderThan30)
 }
+
