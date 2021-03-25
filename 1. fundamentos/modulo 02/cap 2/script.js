@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 })
 
 function doMap() {
-    const nameEmailArray = people.results.map(person => {
+    const nameEmailArray = peoples.results.map(person => {
         return {
             name: person.name,
             email: person.email
@@ -14,7 +14,7 @@ function doMap() {
 }
 
 function doFilter() {
-    const olderThan30 = people.results.filter(person => {
+    const olderThan30 = peoples.results.filter(person => {
         return person.dob.age > 30
     })
     console.log(olderThan30)
