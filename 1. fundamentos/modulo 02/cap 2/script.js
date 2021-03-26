@@ -1,6 +1,7 @@
 window.addEventListener('load', () => {
     doMap()
     doFilter()
+    doForEach()
 })
 
 function doMap() {
@@ -21,3 +22,11 @@ function doFilter() {
     console.log(olderThan30)
 }
 
+function doForEach(){
+    const mappedPeople = doMap()
+
+    mappedPeople.doForEach(person => {
+        person.nameSize = person.title + person.first + person.last
+    })
+    console.log
+}
