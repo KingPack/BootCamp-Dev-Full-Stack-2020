@@ -9,10 +9,10 @@ function doMap() {
         return {
             name: person.name,
             email: person.email,
-            postcod: person.postcod
         }
     })
     console.log(nameEmailArray)
+    return nameEmailArray
 }
 
 function doFilter() {
@@ -22,11 +22,14 @@ function doFilter() {
     console.log(olderThan30)
 }
 
-function doForEach(){
+function doForEach() {
     const mappedPeople = doMap()
 
-    mappedPeople.doForEach(person => {
-        person.nameSize = person.title + person.first + person.last
+    mappedPeople.forEach (person => {
+      person.nameSize = 
+        person.name.title.length + 
+        person.name.first.length + 
+        person.name.last.length;
     })
-    console.log
+    console.log(mappedPeople)
 }
