@@ -2,6 +2,7 @@ window.addEventListener('load', () => {
     doMap()
     doFilter()
     doForEach()
+    doReduce()
 })
 
 function doMap() {
@@ -32,4 +33,10 @@ function doForEach() {
         person.name.last.length;
     })
     console.log(mappedPeople)
+}
+
+function doReduce() {
+    const tatalAges = person.results.reduce((accumulator, current) =>  {
+        return accumulator + current
+    })
 }
