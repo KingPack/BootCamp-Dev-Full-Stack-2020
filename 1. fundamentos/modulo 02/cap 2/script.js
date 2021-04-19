@@ -37,6 +37,6 @@ function doForEach() {
 
 function doReduce() {
     const totalAges = person.results.reduce((accumulator, current) =>  {
-        return accumulator + current + 
+        return accumulator + current ;
     })
 }
